@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt - Philipp Armbrüster IT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Philipp Armbrüster IT</div>
+    <nav class="navbar">
+      <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="projekte.html">Projekte</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="rechner.html">Rechner</a></li>
+        <li><input type="text" placeholder="Benutzername"></li>
+        <li><input type="password" placeholder="Passwort"></li>
+        <li><button>Login</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>Sie können uns über das folgende Formular erreichen:</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Senden</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Philipp Armbrüster IT – Alle Rechte vorbehalten</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

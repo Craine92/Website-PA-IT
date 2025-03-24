@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rechner - Philipp Armbrüster IT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Philipp Armbrüster IT</div>
+    <nav class="navbar">
+      <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="projekte.html">Projekte</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="rechner.html">Rechner</a></li>
+        <li><input type="text" placeholder="Benutzername"></li>
+        <li><input type="password" placeholder="Passwort"></li>
+        <li><button>Login</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="rechner">
+      <h2>Finanzierungsrechner</h2>
+      <p>für Immobilien</p>
+      <form id="finanzierungForm" class="form-container">
+        <label for="immobilienpreis">Immobilienpreis (€):</label>
+        <input type="number" id="immobilienpreis" name="immobilienpreis" required>
+        <label for="kaufnebenkosten">Kaufnebenkosten (€): (ca. 10% vom Kaufpreis)</label>
+        <input type="number" id="kaufnebenkosten" name="kaufnebenkosten" step="0.01" required>
+        <label for="eigenkapital">Eigenkapital (€):</label>
+        <input type="number" id="eigenkapital" name="eigenkapital" required>
+        <label for="zins">Zins (%):</label>
+        <input type="number" id="zins" name="zins" step="0.01" required>
+        <label for="tilgungszins">Tilgungszins (%):</label>
+        <input type="number" id="tilgungszins" name="tilgungszins" step="0.01" required>
+        <label for="sondertilgung">Sondertilgung (€):</label>
+        <input type="number" id="sondertilgung" name="sondertilgung">
+        <button type="button" onclick="berechneFinanzierung()">Berechnen</button>
+      </form>
+      <p id="monatlicheZahlung" class="center-text"></p>
+      <p id="gesamtJahre" class="center-text"></p>
+      <table id="amortizationTable" class="amortization-table">
+        <thead>
+          <tr>
+            <th>Jahr</th>
+            <th>Restschuld (€)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamically filled by JavaScript -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Philipp Armbrüster IT – Alle Rechte vorbehalten</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
