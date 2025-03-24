@@ -98,28 +98,41 @@
     align-items: center;
     gap: 1rem;
     max-width: 400px;
-    margin: 0 auto;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .form-container label {
     font-weight: bold;
+    margin-bottom: 0.5rem;
   }
   
-  .form-container input {
+  .form-container input,
+  .form-container textarea {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .form-container textarea {
+    resize: vertical;
+    height: 150px;
   }
   
   .form-container button {
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     background-color: #0078d4;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 4px;
     font-size: 1rem;
+    transition: background-color 0.3s ease;
   }
   
   .form-container button:hover {
@@ -177,4 +190,26 @@
     text-align: center;
     font-weight: bold;
     margin-top: 1rem;
+  }
+
+  .content-section {
+    padding: 2rem;
+    background: white;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .leistung, .projekt {
+    margin-bottom: 2rem;
+  }
+  
+  .leistung h3, .projekt h3 {
+    font-size: 1.5rem;
+    color: #0078d4;
+  }
+  
+  .leistung p, .projekt p {
+    font-size: 1rem;
+    color: #333;
   }
