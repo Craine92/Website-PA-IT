@@ -162,6 +162,7 @@
   
     .nav-links.active {
       display: flex;
+      width: 80%;
     }
   
     .hamburger {
