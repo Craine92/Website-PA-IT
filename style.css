@@ -158,11 +158,14 @@
       flex-direction: column;
       width: 100%;
       padding: 1rem;
+      z-index: 1000;
     }
   
     .nav-links.active {
       display: flex;
-      width: 80%;
+      width: 100%;
+      padding-left: 50px;
+      padding-right: 50px;
     }
   
     .hamburger {
